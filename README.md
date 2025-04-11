@@ -1,4 +1,4 @@
-# deeplink_x_ios
+# deeplink_x_windows
 
 The Windows implementation of `deeplink_x`.
 
