@@ -1,6 +1,6 @@
 name: deeplink_x_windows
 description: "Windows implementation of the deeplink_x plugin."
-version: 0.0.4
+version: 0.0.5
 
 repository: https://github.com/DeeplinkX/DeeplinkXWindows
 
