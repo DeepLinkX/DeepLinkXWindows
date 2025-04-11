@@ -1,4 +1,8 @@
-## 0.0.2
+## 0.0.4
+
+Fix Changelog typo
+
+## 0.0.3
 
 Fix supported platforms
 
