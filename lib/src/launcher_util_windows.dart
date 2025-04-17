@@ -19,20 +19,20 @@ class LauncherUtilWindows extends LauncherUtilPlatform {
       url_launcher.launchUrl(uri, mode: url_launcher.LaunchMode.externalApplication);
 
   @override
-  Future<void> launchApp(final String scheme) async =>
+  Future<bool> launchAppByScheme(final String scheme) async =>
       url_launcher.launchUrl(Uri.parse('$scheme://'), mode: url_launcher.LaunchMode.externalApplication);
 
   @override
-  Future<bool> isAppInstalled(final String scheme) async => url_launcher.canLaunchUrl(Uri.parse('$scheme://'));
+  Future<bool> isAppInstalledByScheme(final String scheme) async => url_launcher.canLaunchUrl(Uri.parse('$scheme://'));
 
   @override
-  Future<bool> isAndroidAppInstalled(final String packageName) async {
-    throw UnimplementedError('isAndroidAppInstalled() not implemented on this platform.');
+  Future<bool> isAppInstalledByPackageName(final String packageName) async {
+    throw UnimplementedError('isAppInstalledByPackageName() not implemented on this platform.');
   }
 
   @override
-  Future<void> launchAndroidApp(final String packageName) async {
-    throw UnimplementedError('launchAndroidApp() not implemented on this platform.');
+  Future<bool> launchAppByPackageName(final String packageName) async {
+    throw UnimplementedError('launchAppByPackageName() not implemented on this platform.');
   }
 
   @override
